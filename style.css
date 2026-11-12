@@ -32,3 +32,22 @@ img { height: auto; }
 .price-poster{display:block;width:100%;height:auto;max-height:none;object-fit:contain;margin:12px auto 28px;border:1px solid rgba(255,212,0,.38);border-radius:14px;box-shadow:0 18px 45px #0007}
 @media(max-width:900px){.service-buttons{grid-template-columns:1fr 1fr}}
 @media(max-width:720px){.service-buttons{grid-template-columns:1fr}.service-button{min-height:190px}.price-poster{border-radius:10px}}
+
+/* Yellow price-list buttons */
+.service-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  margin-top: auto;
+  border-radius: 10px;
+  background: #ffd400;
+  color: #111 !important;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(255, 212, 0, .28);
+  transition: background .2s ease, transform .2s ease;
+}
+.service-button:hover .service-open {
+  background: #ffe45c;
+  transform: translateY(-2px);
+}
