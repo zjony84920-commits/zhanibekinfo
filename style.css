@@ -33,21 +33,14 @@ img { height: auto; }
 @media(max-width:900px){.service-buttons{grid-template-columns:1fr 1fr}}
 @media(max-width:720px){.service-buttons{grid-template-columns:1fr}.service-button{min-height:190px}.price-poster{border-radius:10px}}
 
-/* Yellow price-list buttons */
-.service-open {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 11px 18px;
-  margin-top: auto;
-  border-radius: 10px;
-  background: #ffd400;
-  color: #111 !important;
-  font-weight: 800;
-  box-shadow: 0 4px 14px rgba(255, 212, 0, .28);
-  transition: background .2s ease, transform .2s ease;
-}
-.service-button:hover .service-open {
-  background: #ffe45c;
-  transform: translateY(-2px);
-}
+/* Social media page */
+.social-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0}
+.social-card{display:flex;align-items:center;gap:17px;padding:22px;border:1px solid rgba(255,212,0,.4);border-radius:17px;background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.025));transition:.2s}
+.social-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 30px #0005}
+.social-logo{width:58px;height:58px;display:grid;place-items:center;border-radius:15px;background:#080a0e;color:#fff;font-size:36px;font-weight:800}
+.instagram-card .social-logo{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
+.social-card strong,.social-card small{display:block}
+.social-card strong{font-size:19px;color:var(--white)}
+.social-card small{font-size:13px;color:var(--muted);margin-top:5px}
+.social-arrow{margin-left:auto;color:var(--gold);font-size:24px}
+@media(max-width:720px){.social-grid{grid-template-columns:1fr}.social-card{padding:17px}}
